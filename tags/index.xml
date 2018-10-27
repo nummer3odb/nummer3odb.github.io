@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Name_</title>
-    <link>http://d4jsk8d9.opdebeeck.org/tags/</link>
+    <link>https://oskar.opdebeeck.org/tags/</link>
     <description>Recent content in Tags on Name_</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>nl-be</language>
     <copyright>&amp;copy;2018 Op de beeck</copyright>
     
-	<atom:link href="http://d4jsk8d9.opdebeeck.org/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://oskar.opdebeeck.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
