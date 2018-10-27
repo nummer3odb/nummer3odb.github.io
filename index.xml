@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Naam</title>
-    <link>https://oskar.opdebeeck.org/</link>
+    <link>/</link>
     <description>Recent content on Naam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>nl-be</language>
     <copyright>&amp;copy;2018 Op de beeck</copyright>
     <lastBuildDate>Sun, 07 Oct 2018 15:20:38 +0200</lastBuildDate>
     
-	<atom:link href="https://oskar.opdebeeck.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://oskar.opdebeeck.org/comments/</link>
+      <link>/comments/</link>
       <pubDate>Sun, 14 Oct 2018 23:30:12 +0200</pubDate>
       
-      <guid>https://oskar.opdebeeck.org/comments/</guid>
+      <guid>/comments/</guid>
       <description></description>
     </item>
     
