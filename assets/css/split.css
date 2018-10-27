@@ -1,0 +1,501 @@
+/*
+Template Name: Split
+Author: One Page Love
+Author URI: https://onepagelove.com
+Template URI: https://onepagelove.com/split
+Description: Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content.
+*/
+/* -- CSS Reset -- */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "liga" on;
+  margin: 0;
+}
+
+img.alignright {
+  float: right;
+}
+
+img.alignleft {
+  float: left;
+}
+
+img.aligncenter {
+  clear: both;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  background-color: #FFFFFF;
+  border-style: none;
+}
+
+body,
+p,
+a,
+a:hover {
+  color: #000000;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  border: none;
+  border-style: none;
+  box-shadow: none;
+}
+
+/* -- Content -- */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+html {
+  background-color: #99B7C7;
+}
+
+body.page-template-page-fullsingle-split {
+  background-color: #99B7C7;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  text-align: justify;
+  color: #FFFFFF;
+  animation: fadein 2s;
+}
+
+body.page-template-page-fullsingle-split p {
+  color: #FFFFFF;
+}
+
+body.page-template-page-fullsingle-split p + p {
+  margin-top: 25px;
+}
+
+.fs-split {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+@media (max-width: 960px) {
+  .fs-split {
+    height: auto;
+    flex-wrap: wrap;
+  }
+}
+
+.fs-split .split-image {
+  width: 50%;
+  height: 100vh;
+  background-size: cover;
+}
+
+@media (max-width: 960px) {
+  .fs-split .split-image {
+    height: 80vh;
+    width: 100%;
+  }
+}
+
+.fs-split .split-content {
+  width: 50%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: auto;
+}
+
+@media (max-width: 960px) {
+  .fs-split .split-content {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.fs-split .split-content .split-content-vertically-center {
+  padding: 80px;
+  max-width: 640px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media (max-width: 1200px) {
+  .fs-split .split-content .split-content-vertically-center {
+    padding: 60px;
+  }
+}
+
+@media (max-width: 960px) {
+  .fs-split .split-content .split-content-vertically-center {
+    padding: 40px;
+  }
+}
+
+.split-intro {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 60px;
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+@media (max-width: 1200px) {
+  .split-intro {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .split-intro {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.split-intro a {
+  color: #FFFFFF;
+}
+
+.split-intro a:hover {
+  color: #FFFFFF;
+  transition-duration: 0.1s;
+  border-bottom: 2px dotted #FFFFFF;
+}
+
+.split-intro h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 82px;
+  line-height: 16px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  letter-spacing: 4px;
+  color: #FFFFFF;
+}
+
+.split-intro .tagline {
+  white-space: pre;
+  color: #FFFFFF;
+}
+
+.comments {
+  margin-top: 25px;
+}
+
+.split-body {
+  padding: 40px 0 20px 0;
+  font-family: 'Montserrat', serif;
+}
+
+@media (max-width: 1200px) {
+  .split-body {
+    padding: 30px 0 10px 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .split-body {
+    padding: 20px 0 0 0;
+  }
+}
+
+.split-body p {
+  color: #FFFFFF;
+  line-height: inherit;
+}
+
+.split-body a {
+  color: #FFFFFF;
+  transition-duration: 0.5s;
+  border-bottom: 1px dotted #FFFFFF;
+}
+
+.split-body a:hover {
+  color: #FFFFFF;
+  transition-duration: 0.1s;
+  border-bottom: 1px dotted #FFFFFF;
+}
+
+.split-body em,
+.split-body i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+.split-body strong,
+.split-body b {
+  font-weight: 700;
+  line-height: inherit;
+}
+
+.split-body small {
+  font-size: 80%;
+  line-height: inherit;
+}
+
+.split-body h1, .split-body .h1,
+.split-body h2, .split-body .h2,
+.split-body h3, .split-body .h3,
+.split-body h4, .split-body .h4,
+.split-body h5, .split-body .h5,
+.split-body h6, .split-body .h6 {
+  font-style: normal;
+  font-weight: normal;
+  color: inherit;
+}
+
+.split-body h1 small, .split-body .h1 small,
+.split-body h2 small, .split-body .h2 small,
+.split-body h3 small, .split-body .h3 small,
+.split-body h4 small, .split-body .h4 small,
+.split-body h5 small, .split-body .h5 small,
+.split-body h6 small, .split-body .h6 small {
+  line-height: 0;
+}
+
+.split-body h1, .split-body .h1 {
+  font-size: 1.5em;
+  line-height: inherit;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.split-body h2, .split-body .h2 {
+  font-size: 1.25em;
+  line-height: inherit;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.split-body h3, .split-body .h3 {
+  font-size: 1.1875em;
+  line-height: inherit;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.split-body h4, .split-body .h4 {
+  font-size: 1.125em;
+  line-height: inherit;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.split-body h5, .split-body .h5 {
+  font-size: 1.0625em;
+  line-height: inherit;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.split-body h6, .split-body .h6 {
+  font-size: 1em;
+  line-height: inherit;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.split-body ul,
+.split-body ol,
+.split-body dl {
+  margin-bottom: 20px;
+  list-style-position: outside;
+  line-height: inherit;
+}
+
+.split-body li {
+  font-size: inherit;
+}
+
+.split-body ul {
+  margin-left: 2.25em;
+  list-style-type: none;
+}
+
+.split-body ol {
+  margin-left: 2.25em;
+  list-style-type: decimal;
+}
+
+.split-body ul ul, .split-body ol ul, .split-body ul ol, .split-body ol ol {
+  margin-left: 1.25em;
+  margin-bottom: 0;
+}
+
+.split-body dl dt {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.split-body dl dd {
+  margin-bottom: 10px;
+}
+
+.split-lists .split-list {
+  width: 48%;
+  display: inline-block;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  vertical-align: top;
+}
+
+@media (max-width: 480px) {
+  .split-lists .split-list {
+    width: 90%;
+  }
+}
+
+.split-lists .split-list h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 11px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  opacity: 0.6;
+}
+
+.split-lists .split-list ul li {
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.split-lists .split-list ul li a {
+  color: #FFFFFF;
+  transition-duration: 0.5s;
+}
+
+.split-lists .split-list ul li a:hover {
+  color: #FFFFFF;
+  transition-duration: 0.1s;
+  border-bottom: 2px dotted #FFFFFF;
+}
+
+.split-credit {
+  opacity: 0.4;
+  margin-bottom: 20px;
+}
+
+.split-credit p {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.split-credit p a {
+  color: #FFFFFF;
+}
+
+.split-video {
+  overflow: hidden;
+  position: relative;
+}
+
+.video-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  height: 56.25vw;
+  width: 100vw;
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+  .video-container {
+    height: 100vh;
+    width: 177.7777777778vh;
+  }
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+video.video {
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+}
